@@ -10,6 +10,8 @@ body {
 .center {
     position: relative;
     padding: 10px 25px 10px 25px;
+    border: 3px solid red;
+    z-index: 20;
 }
 
 .title-box {
@@ -19,27 +21,7 @@ body {
     height: 100px;
     bottom: 0;
     right: 0;
-    z-index: 10;
-}
-
-.title-box:after {
-    content: '';
-    width: 330px;
-    height: 3px;
-    background: #F7F7F6;
-    position: absolute;
-    bottom: -3px;
-    left: 21px;
-}
-
-.title-box:before {
-    content: '';
-    width: 3px;
-    height: 82px;
-    background: #F7F7F6;
-    position: absolute;
-    right: -3px;
-    top: 21px;
+    z-index: -1;
 }
 
 .title-background {

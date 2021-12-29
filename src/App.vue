@@ -15,7 +15,7 @@ import NavBar from './components/NavBar.vue'
   <div class="xl:grid xl:grid-cols-8">
     <div></div>
     <div class="xl:col-span-6">
-      <router-view class="relative"></router-view>
+      <router-view></router-view>
     </div>
     <div></div>
   </div>

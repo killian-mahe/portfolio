@@ -8,7 +8,7 @@
     </div>
 
     <!--  Links  -->
-    <div class="w-2/3 xl:w-1/2 flex justify-between font-sans font-bold">
+    <div class="w-2/3 xl:w-1/2 flex justify-between font-sans font-light">
       <router-link class="navbar-link" active-class="active" :to="{ name: 'about' }">About me</router-link>
       <router-link class="navbar-link" active-class="active" :to="{ name: 'education' }">Education</router-link>
       <router-link class="navbar-link" active-class="active" :to="{ name: 'career' }">My career</router-link>

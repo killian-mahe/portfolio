@@ -12,10 +12,12 @@ import NavBar from './components/NavBar.vue'
     </div>
     <div></div>
   </div>
+
+  <router-view></router-view>
+
   <div class="xl:grid xl:grid-cols-8">
     <div></div>
     <div class="xl:col-span-6">
-      <router-view></router-view>
     </div>
     <div></div>
   </div>

@@ -13,7 +13,11 @@ import NavBar from './components/NavBar.vue'
     <div></div>
   </div>
 
-  <router-view></router-view>
+  <router-view v-slot="{ Component, route }">
+    <transition name="fade">
+      <component :is="Component" :key="route.path" />
+    </transition>
+  </router-view>
 
   <div class="xl:grid xl:grid-cols-8">
     <div></div>
@@ -22,3 +26,20 @@ import NavBar from './components/NavBar.vue'
     <div></div>
   </div>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+</style>

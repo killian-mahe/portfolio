@@ -13,18 +13,9 @@ import NavBar from './components/NavBar.vue'
     <div></div>
   </div>
 
-  <router-view v-slot="{ Component, route }">
-    <transition name="fade">
-      <component :is="Component" :key="route.path" />
-    </transition>
+  <router-view>
   </router-view>
 
-  <div class="xl:grid xl:grid-cols-8">
-    <div></div>
-    <div class="xl:col-span-6">
-    </div>
-    <div></div>
-  </div>
 </template>
 
 <style scoped>

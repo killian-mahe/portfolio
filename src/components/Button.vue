@@ -19,11 +19,11 @@ export default {
 .front-button {
   @apply absolute bottom-0 left-0 hover:bottom-1 hover:-left-1 active:bottom-0 active:left-0;
   @apply transition-all transform duration-200 ease-in-out;
-  @apply border-black-blue;
+  @apply border-black-blue w-full;
 }
 
 .back-button {
-  @apply border-primary;
+  @apply border-primary w-full;
 }
 
 </style>

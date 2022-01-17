@@ -22,8 +22,8 @@
     <div></div>
 
     <div class="lg:col-span-4">
-      <div class="grid grid-cols-3 gap-10">
-        <ProjectCard v-for="project in selectedProjects" class="h-96"
+      <div class="grid grid-cols-3 gap-12">
+        <ProjectCard v-for="project in selectedProjects" class="h-[450px]"
                      :project="project"></ProjectCard>
       </div>
     </div>
@@ -47,21 +47,58 @@ export default {
   data() {
     return {
       tags: new Set([
-          "Web", "ENIB", "Game", "AI", "UQAC", "Python", "Research", "PHP", "JavaScript"
+          "Web", "ENIB", "Game", "AI", "UQAC", "Python", "Research", "PHP", "JavaScript", "Paper"
       ]),
       selectedTags: new Set([]),
       projects: [
         {
           name: "Share Your Project",
           img: "/img/projects/syp.png",
-          description: "A project social network",
+          description: "Project social network",
           tags: ["Web", "PHP", "JavaScript", "ENIB"]
         },
         {
           name: "Lumic",
-          img: "/public/logo.png",
-          description: "Lorem ipsum...",
+          img: "/img/projects/lumic.svg",
+          description: "Personal dashboard and url shortener",
           tags: ["Web", "PHP", "JavaScript"]
+        },
+
+        {
+          name: "AI procedural generation review",
+          img: "/img/projects/paper.png",
+          description: "Literature review on the evolution of artificial intelligence in procedural generation",
+          tags: ["UQAC", "Research", "Paper", "AI"]
+        },
+        {
+          name: "Sudoku Reader",
+          img: "/img/projects/sudoku.png",
+          description: "Sudoku solver using AI",
+          tags: ["AI", "UQAC", "Python"]
+        },
+        {
+          name: "Colors clustering",
+          img: "/img/projects/clustering.svg",
+          description: "Pictures colors clustering app",
+          tags: ["AI", "UQAC", "Python"]
+        },
+        {
+          name: "Vacuum agent",
+          img: "/img/projects/vacuum.png",
+          description: "Intelligent vacuum agent",
+          tags: ["AI", "UQAC", "Python"]
+        },
+        {
+          name: "Fourier Drafter",
+          img: "/img/projects/drawing.png",
+          description: "Fourier transform drawing app",
+          tags: ["Web", "JavaScript"]
+        },
+        {
+          name: "The Eternal Kingdom",
+          img: "/img/projects/game.png",
+          description: "Tower defense console game",
+          tags: ["Python", "ENIB", "Game"]
         }
       ]
     }

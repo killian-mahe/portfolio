@@ -3,10 +3,10 @@
 
   <div class="absolute -top-2 -left-2 w-full h-full border-[3px] border-black-blue bg-white flex flex-col items-center justify-between p-5">
 
-    <h2 class="text-primary font-mono text-2xl font-bold">{{ project.name }}</h2>
+    <h2 class="text-primary text-center font-mono text-3xl font-bold">{{ project.name }}</h2>
 
     <img :src="project.img"
-         class="h-auto w-1/2"
+         class="h-auto min-w-1/2 max-h-24"
          alt="project_picture"/>
 
     <p class="text-center font-sans font-light">{{ project.description }}</p>

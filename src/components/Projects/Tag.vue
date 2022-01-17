@@ -1,5 +1,6 @@
 <template>
-  <span class="font-sans text-sm w-fit flex items-center" :class="{'border-2 px-1 border-secondary': selected || outline}">
+  <span class="font-sans text-sm w-fit flex items-center"
+        :class="{'border-2 px-1 border-secondary': selected || outline, 'cursor-pointer': !selected && !outline}">
     <span @click="onSelect"><slot></slot></span>
     <svg v-if="deletable"
          @click="onDelete"

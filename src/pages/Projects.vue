@@ -2,6 +2,10 @@
   <!-- Title -->
   <Title class="my-12"></Title>
 
+  <Modal v-if="focusedProject" @close="close">
+    <Carousel :images="focusedProject.images"></Carousel>
+  </Modal>
+
   <!-- Background line -->
   <div class="absolute top-0 w-screen left-1/4 -z-10 max-h-screen">
     <svg width="901" height="1171" viewBox="0 0 901 1171" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,9 +26,10 @@
     <div></div>
 
     <div class="lg:col-span-4">
-      <div class="grid grid-cols-3 gap-12">
-        <ProjectCard v-for="project in selectedProjects" class="h-[450px]"
-                     :project="project"></ProjectCard>
+      <div class="grid grid-cols-3 gap-12 mx-auto">
+        <ProjectCard @details="open(project)" v-for="project in selectedProjects" class="h-[400px] snap-center" :project="project"></ProjectCard>
+<!--        <LargeProjectCard v-for="project in selectedProjects" class="h-[400px] hidden xl:block snap-center"-->
+<!--                     :project="project"></LargeProjectCard>-->
       </div>
     </div>
 
@@ -34,73 +39,31 @@
 
 <script>
 import Title from '../components/Projects/Title.vue'
+import LargeProjectCard from "../components/Projects/LargeProjectCard.vue";
 import ProjectCard from "../components/Projects/ProjectCard.vue";
 import Tag from '../components/Projects/Tag.vue';
+import Modal from '../components/Modal.vue';
+import Carousel from '../components/Carousel.vue';
+import projects_store from '../projects.json';
 
 export default {
   name: "Projects",
   components: {
     Tag,
     Title,
-    ProjectCard
+    ProjectCard,
+    LargeProjectCard,
+    Modal,
+    Carousel
   },
   data() {
     return {
       tags: new Set([
           "Web", "ENIB", "Game", "AI", "UQAC", "Python", "Research", "PHP", "JavaScript", "Paper"
       ]),
+      focusedProject: null,
       selectedTags: new Set([]),
-      projects: [
-        {
-          name: "Share Your Project",
-          img: "/img/projects/syp.png",
-          description: "Project social network",
-          tags: ["Web", "PHP", "JavaScript", "ENIB"]
-        },
-        {
-          name: "Lumic",
-          img: "/img/projects/lumic.svg",
-          description: "Personal dashboard and url shortener",
-          tags: ["Web", "PHP", "JavaScript"]
-        },
-
-        {
-          name: "AI procedural generation review",
-          img: "/img/projects/paper.png",
-          description: "Literature review on the evolution of artificial intelligence in procedural generation",
-          tags: ["UQAC", "Research", "Paper", "AI"]
-        },
-        {
-          name: "Sudoku Reader",
-          img: "/img/projects/sudoku.png",
-          description: "Sudoku solver using AI",
-          tags: ["AI", "UQAC", "Python"]
-        },
-        {
-          name: "Colors clustering",
-          img: "/img/projects/clustering.svg",
-          description: "Pictures colors clustering app",
-          tags: ["AI", "UQAC", "Python"]
-        },
-        {
-          name: "Vacuum agent",
-          img: "/img/projects/vacuum.png",
-          description: "Intelligent vacuum agent",
-          tags: ["AI", "UQAC", "Python"]
-        },
-        {
-          name: "Fourier Drafter",
-          img: "/img/projects/drawing.png",
-          description: "Fourier transform drawing app",
-          tags: ["Web", "JavaScript"]
-        },
-        {
-          name: "The Eternal Kingdom",
-          img: "/img/projects/game.png",
-          description: "Tower defense console game",
-          tags: ["Python", "ENIB", "Game"]
-        }
-      ]
+      projects: projects_store
     }
   },
   computed: {
@@ -121,6 +84,12 @@ export default {
     },
     selectTag(tag) {
       this.selectedTags.add(tag)
+    },
+    open(project) {
+      this.focusedProject = project;
+    },
+    close() {
+      this.focusedProject = null;
     }
   }
 }

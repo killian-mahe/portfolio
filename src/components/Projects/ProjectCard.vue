@@ -5,7 +5,7 @@
 
     <h2 class="text-primary text-center font-mono text-3xl font-bold">{{ project.name }}</h2>
 
-    <img :src="project.img"
+    <img :src="project.images[0]"
          class="h-auto min-w-1/2 max-h-24"
          alt="project_picture"/>
 
@@ -15,7 +15,7 @@
       <Tag v-for="tag in project.tags" :outline="true">{{ tag }}</Tag>
     </div>
 
-    <Button class="w-3/4 mt-2">See more</Button>
+    <Button class="w-3/4 mt-2" @click="$emit('details')">See more</Button>
 
   </div>
 
@@ -33,6 +33,7 @@ export default {
     Button,
     Tag
   },
+  emits: ["details"],
   props: {
     project: {
       type: Object,

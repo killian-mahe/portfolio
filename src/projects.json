@@ -13,7 +13,12 @@
       "PHP",
       "JavaScript",
       "ENIB"
-    ]
+    ],
+    "links": {
+      "demo": "https://app.shareyourproject.fr/",
+      "github": "https://github.com/shareYourProject/",
+      "download": null
+    }
   },
   {
     "name": "Lumic",
@@ -26,7 +31,12 @@
       "Web",
       "PHP",
       "JavaScript"
-    ]
+    ],
+    "links": {
+      "demo": "https://lumic.fr/",
+      "github": "https://github.com/killian-mahe/lumic",
+      "download": null
+    }
   },
   {
     "name": "AI procedural generation review",
@@ -39,7 +49,12 @@
       "Research",
       "Paper",
       "AI"
-    ]
+    ],
+    "links": {
+      "demo": null,
+      "github": null,
+      "download": "https://lumic.fr"
+    }
   },
   {
     "name": "Sudoku Reader",
@@ -51,7 +66,12 @@
       "AI",
       "UQAC",
       "Python"
-    ]
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/sudoku-reader",
+      "download": null
+    }
   },
   {
     "name": "Colors clustering",
@@ -63,7 +83,12 @@
       "AI",
       "UQAC",
       "Python"
-    ]
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/colors-clustering",
+      "download": null
+    }
   },
   {
     "name": "Vacuum agent",
@@ -75,7 +100,12 @@
       "AI",
       "UQAC",
       "Python"
-    ]
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/agent-aspirateur",
+      "download": null
+    }
   },
   {
     "name": "Fourier Drafter",
@@ -86,7 +116,12 @@
     "tags": [
       "Web",
       "JavaScript"
-    ]
+    ],
+    "links": {
+      "demo": "https://fourier.killianmahe.shareyourproject.fr/",
+      "github": "https://github.com/killian-mahe/Fourier-Drafter",
+      "download": null
+    }
   },
   {
     "name": "The Eternal Kingdom",
@@ -98,6 +133,11 @@
       "Python",
       "ENIB",
       "Game"
-    ]
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/the_eternal_kingdom",
+      "download": null
+    }
   }
 ]

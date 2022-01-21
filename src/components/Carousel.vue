@@ -1,11 +1,15 @@
 <template>
-  <div class="carousel">
-    <div class="inner" ref="inner" :style="innerStyles">
-      <img class="image object-cover" v-for="image in imagesArray" :src="image" alt="carousel_image" :key="image"/>
+  <div class="carousel" ref="carousel">
+    <div class="inner h-96" ref="inner" :style="innerStyles">
+      <img class="image object-contain" v-for="image in imagesArray" :src="image" alt="carousel_image" :key="image"/>
     </div>
 
-    <svg class="carousel-button absolute top-1/2 left-2" @click="prev" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-    <svg class="carousel-button absolute top-1/2 right-2" @click="next" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+    <svg class="carousel-button absolute top-1/2 left-2"
+         @click="prev"
+         v-if="enableSliding" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    <svg class="carousel-button absolute top-1/2 right-2"
+         @click="next"
+         v-if="enableSliding" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
 </template>
 
@@ -14,7 +18,7 @@ export default {
   name: "Carousel",
   data () {
     return {
-      imagesArray: JSON.parse(JSON.stringify(this.images)), // Clone props
+      imagesArray: this.images,
       innerStyles: {},
       step: '',
       transitioning: false
@@ -27,10 +31,17 @@ export default {
     }
   },
   mounted() {
-    this.setStep()
-    this.resetTranslate()
-    const image = this.imagesArray.pop()
-    this.imagesArray.unshift(image)
+    if (this.enableSliding) {
+      this.setStep()
+      this.resetTranslate()
+      const image = this.imagesArray.pop()
+      this.imagesArray.unshift(image)
+    }
+  },
+  computed: {
+    enableSliding() {
+      return this.imagesArray.length !== 1;
+    }
   },
   methods: {
     setStep() {
@@ -96,7 +107,7 @@ export default {
 <style scoped>
 .carousel {
   @apply max-w-full overflow-hidden;
-  @apply relative;
+  @apply relative h-fit;
   @apply select-none;
 }
 
@@ -107,6 +118,9 @@ export default {
 
 .image {
   width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
   margin-right: 10px;
   display: inline-flex;
 }

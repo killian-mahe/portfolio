@@ -1,11 +1,12 @@
 <template>
   <div class="carousel">
     <div class="inner" ref="inner" :style="innerStyles">
-      <img class="image" v-for="image in imagesArray" :src="image" :key="image"/>
+      <img class="image object-cover" v-for="image in imagesArray" :src="image" alt="carousel_image" :key="image"/>
     </div>
+
+    <svg class="carousel-button absolute top-1/2 left-2" @click="prev" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    <svg class="carousel-button absolute top-1/2 right-2" @click="next" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
   </div>
-  <button @click="prev">prev</button>
-  <button @click="next">next</button>
 </template>
 
 <script>
@@ -13,7 +14,7 @@ export default {
   name: "Carousel",
   data () {
     return {
-      imagesArray: this.images,
+      imagesArray: JSON.parse(JSON.stringify(this.images)), // Clone props
       innerStyles: {},
       step: '',
       transitioning: false
@@ -94,8 +95,9 @@ export default {
 
 <style scoped>
 .carousel {
-  width: 170px; /* ❶ */
-  overflow: hidden; /* ❷ */
+  @apply max-w-full overflow-hidden;
+  @apply relative;
+  @apply select-none;
 }
 
 .inner {
@@ -104,14 +106,14 @@ export default {
 }
 
 .image {
-  width: 40px;
+  width: 100%;
   margin-right: 10px;
   display: inline-flex;
 }
 
-/* optional */
-button {
-  margin-right: 5px;
-  margin-top: 10px;
+.carousel-button {
+  @apply bg-black stroke-white rounded-full p-1 h-8 w-8 opacity-50;
+  @apply hover:opacity-75;
+  @apply transition ease-in-out duration-100;
 }
 </style>

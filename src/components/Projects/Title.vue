@@ -24,7 +24,7 @@ export default {
 }
 
 .bordered-box {
-  @apply border-4 border-primary absolute z-10;
+  @apply border-4 border-primary absolute;
   @apply flex justify-center items-center;
   @apply font-mono text-3xl font-medium tracking-wide;
   line-height: 0;
@@ -35,7 +35,7 @@ export default {
 }
 
 .main-box {
-  @apply absolute z-50;
+  @apply absolute;
   @apply border-b-4 border-l-4 border-b-white border-l-white;
   width: 10px;
   height: 10px;

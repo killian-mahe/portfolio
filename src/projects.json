@@ -1,0 +1,143 @@
+[
+  {
+    "name": "Share Your Project",
+    "images": [
+      "/img/projects/syp.png",
+      "/img/projects/syp/welcome.png",
+      "/img/projects/syp/login.png",
+      "/img/projects/syp/welcome_2.png"
+    ],
+    "description": "Project social network",
+    "tags": [
+      "Web",
+      "PHP",
+      "JavaScript",
+      "ENIB"
+    ],
+    "links": {
+      "demo": "https://app.shareyourproject.fr/",
+      "github": "https://github.com/shareYourProject/",
+      "download": null
+    }
+  },
+  {
+    "name": "Lumic",
+    "images": [
+      "/img/projects/lumic.svg",
+      "/img/projects/paper.png"
+    ],
+    "description": "Personal dashboard and url shortener",
+    "tags": [
+      "Web",
+      "PHP",
+      "JavaScript"
+    ],
+    "links": {
+      "demo": "https://lumic.fr/",
+      "github": "https://github.com/killian-mahe/lumic",
+      "download": null
+    }
+  },
+  {
+    "name": "AI procedural generation review",
+    "images": [
+      "/img/projects/paper.png"
+    ],
+    "description": "Literature review on the evolution of artificial intelligence in procedural generation",
+    "tags": [
+      "UQAC",
+      "Research",
+      "Paper",
+      "AI"
+    ],
+    "links": {
+      "demo": null,
+      "github": null,
+      "download": "https://lumic.fr"
+    }
+  },
+  {
+    "name": "Sudoku Reader",
+    "images": [
+      "/img/projects/sudoku.png"
+    ],
+    "description": "Sudoku solver using AI",
+    "tags": [
+      "AI",
+      "UQAC",
+      "Python"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/sudoku-reader",
+      "download": null
+    }
+  },
+  {
+    "name": "Colors clustering",
+    "images": [
+      "/img/projects/clustering.svg"
+    ],
+    "description": "Pictures colors clustering app",
+    "tags": [
+      "AI",
+      "UQAC",
+      "Python"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/colors-clustering",
+      "download": null
+    }
+  },
+  {
+    "name": "Vacuum agent",
+    "images": [
+      "/img/projects/vacuum.png"
+    ],
+    "description": "Intelligent vacuum agent",
+    "tags": [
+      "AI",
+      "UQAC",
+      "Python"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/agent-aspirateur",
+      "download": null
+    }
+  },
+  {
+    "name": "Fourier Drafter",
+    "images": [
+      "/img/projects/drawing.png"
+    ],
+    "description": "Fourier transform drawing app",
+    "tags": [
+      "Web",
+      "JavaScript"
+    ],
+    "links": {
+      "demo": "https://fourier.killianmahe.shareyourproject.fr/",
+      "github": "https://github.com/killian-mahe/Fourier-Drafter",
+      "download": null
+    }
+  },
+  {
+    "name": "The Eternal Kingdom",
+    "images": [
+      "/img/projects/game.png"
+    ],
+    "description": "Tower defense console game",
+    "tags": [
+      "Python",
+      "ENIB",
+      "Game"
+    ],
+    "links": {
+      "demo": null,
+      "github": "https://github.com/killian-mahe/the_eternal_kingdom",
+      "download": null
+    }
+  }
+]

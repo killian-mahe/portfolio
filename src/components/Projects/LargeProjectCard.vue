@@ -28,15 +28,15 @@
         <span v-if="project.end_date && project.start_date !== project.end_date">{{ project.start_date }} - {{ project.end_date }}</span>
         <span v-else-if="project.end_date === project.start_date">{{ project.start_date }}</span>
         <span v-else-if="!project.end_date" class="font-sans font-light">{{ project.start_date }} - (in progress)</span>
-        <svg class="h-8 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+        <svg class="h-5 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
       </div>
     </div>
 
-    <div class="flex justify-between items-center">
+    <div class="flex justify-between items-center mt-1">
       <span class="flex space-x-2"><Tag class="h-fit" v-for="tag in project.tags" :outline="true">{{ tag }}</Tag></span>
       <div class="flex items-center font-light">
         <span>{{ project.duration }}</span>
-        <svg class="h-8 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <svg class="h-5 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
       </div>
     </div>
 
@@ -50,7 +50,7 @@
       Etiam ultrices blandit tortor, at hendrerit urna posuere quis.
     </p>
 
-    <Carousel class="w-3/4 max-h-[24rem] mx-auto mt-8" :images="project.images"></Carousel>
+    <Carousel class="w-3/4 max-h-[24rem] mx-auto mt-5" :images="project.images"></Carousel>
 
   </div>
 
@@ -86,7 +86,7 @@ export default {
 
 <style scoped>
 .project-links {
-  @apply h-8 opacity-50 hover:opacity-100;
+  @apply h-10 opacity-50 hover:opacity-100;
   @apply transition duration-100 ease-in-out;
 }
 </style>

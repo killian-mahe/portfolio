@@ -14,8 +14,8 @@
 
   <!-- Tag list -->
   <div id="tag-list-top" class="h-[1px]"></div>
-  <div id="stickyTagList" class="sticky top-0 my-10 w-full z-20 py-4 transition-all ease-in-out duration-100">
-    <div class="w-1/2 flex flex-wrap justify-center gap-4 space-x-24 mx-auto">
+  <div id="stickyTagList" class="sticky top-0 my-10 w-full z-20 py-2 transition-all ease-in-out duration-100">
+    <div class="w-1/3 flex flex-wrap justify-center gap-2 space-x-12 mx-auto">
       <Tag v-for="tag in tags"
            :selected="selectedTags.has(tag)"
            @click="toggleTag(tag)">{{ tag }}

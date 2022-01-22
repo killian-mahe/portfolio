@@ -2,11 +2,13 @@
   {
     "name": "Share Your Project",
     "images": [
-      "/img/projects/syp.png",
       "/img/projects/syp/welcome.png",
       "/img/projects/syp/login.png",
       "/img/projects/syp/welcome_2.png"
     ],
+    "start_date": "September 2020",
+    "end_date": null,
+    "duration": "150h",
     "description": "Project social network",
     "tags": [
       "Web",
@@ -23,9 +25,11 @@
   {
     "name": "Lumic",
     "images": [
-      "/img/projects/lumic.svg",
-      "/img/projects/paper.png"
+      "/img/projects/syp/welcome_2.png"
     ],
+    "start_date": "July 2021",
+    "end_date": null,
+    "duration": "35h",
     "description": "Personal dashboard and url shortener",
     "tags": [
       "Web",
@@ -43,6 +47,9 @@
     "images": [
       "/img/projects/paper.png"
     ],
+    "start_date": "December 2021",
+    "end_date": "December 2021",
+    "duration": "25h",
     "description": "Literature review on the evolution of artificial intelligence in procedural generation",
     "tags": [
       "UQAC",
@@ -61,6 +68,9 @@
     "images": [
       "/img/projects/sudoku.png"
     ],
+    "start_date": "November 2021",
+    "end_date": "December 2021",
+    "duration": "50h",
     "description": "Sudoku solver using AI",
     "tags": [
       "AI",
@@ -78,6 +88,9 @@
     "images": [
       "/img/projects/clustering.svg"
     ],
+    "start_date": "October 2021",
+    "end_date": "October 2021",
+    "duration": "30h",
     "description": "Pictures colors clustering app",
     "tags": [
       "AI",
@@ -95,6 +108,9 @@
     "images": [
       "/img/projects/vacuum.png"
     ],
+    "start_date": "October 2021",
+    "end_date": "October 2021",
+    "duration": "35h",
     "description": "Intelligent vacuum agent",
     "tags": [
       "AI",
@@ -112,6 +128,9 @@
     "images": [
       "/img/projects/drawing.png"
     ],
+    "start_date": "August 2021",
+    "end_date": "August 2021",
+    "duration": "15h",
     "description": "Fourier transform drawing app",
     "tags": [
       "Web",
@@ -128,6 +147,9 @@
     "images": [
       "/img/projects/game.png"
     ],
+    "start_date": "February 2018",
+    "end_date": "June 2018",
+    "duration": "100h",
     "description": "Tower defense console game",
     "tags": [
       "Python",

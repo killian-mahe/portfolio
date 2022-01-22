@@ -1,7 +1,7 @@
 <template>
-  <div class="carousel" ref="carousel">
-    <div class="inner h-96" ref="inner" :style="innerStyles">
-      <img class="image object-contain" v-for="image in imagesArray" :src="image" alt="carousel_image" :key="image"/>
+  <div class="carousel rounded-lg" ref="carousel">
+    <div class="inner h-96 rounded-lg" ref="inner" :style="innerStyles">
+      <img class="image object-cover rounded-lg" v-for="image in imagesArray" :src="image" alt="carousel_image" :key="image"/>
     </div>
 
     <svg class="carousel-button absolute top-1/2 left-2"

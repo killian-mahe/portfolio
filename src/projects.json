@@ -6,10 +6,11 @@
       "/img/projects/syp/login.png",
       "/img/projects/syp/welcome_2.png"
     ],
-    "start_date": "September 2020",
+    "start_date": "September 2019",
     "end_date": null,
     "duration": "150h",
-    "description": "Project social network",
+    "title": "Project social network",
+    "description_file": "syp.md",
     "tags": [
       "Web",
       "PHP",
@@ -25,12 +26,16 @@
   {
     "name": "Lumic",
     "images": [
-      "/img/projects/syp/welcome_2.png"
+      "/img/projects/lumic/dashboard.png",
+      "/img/projects/lumic/edit.png",
+      "/img/projects/lumic/team_settings.png",
+      "/img/projects/lumic/admin.png"
     ],
     "start_date": "July 2021",
     "end_date": null,
     "duration": "35h",
-    "description": "Personal dashboard and url shortener",
+    "title": "Personal dashboard and url shortener",
+    "description_file": "lumic.md",
     "tags": [
       "Web",
       "PHP",
@@ -50,7 +55,8 @@
     "start_date": "December 2021",
     "end_date": "December 2021",
     "duration": "25h",
-    "description": "Literature review on the evolution of artificial intelligence in procedural generation",
+    "title": "Literature review on the evolution of artificial intelligence in procedural generation",
+    "description_file": "ai_review.md",
     "tags": [
       "UQAC",
       "Research",
@@ -71,7 +77,8 @@
     "start_date": "November 2021",
     "end_date": "December 2021",
     "duration": "50h",
-    "description": "Sudoku solver using AI",
+    "title": "Sudoku solver using AI",
+    "description_file": "sudoku.md",
     "tags": [
       "AI",
       "UQAC",
@@ -91,7 +98,8 @@
     "start_date": "October 2021",
     "end_date": "October 2021",
     "duration": "30h",
-    "description": "Pictures colors clustering app",
+    "title": "Pictures colors clustering app",
+    "description_file": "colors.md",
     "tags": [
       "AI",
       "UQAC",
@@ -111,7 +119,8 @@
     "start_date": "October 2021",
     "end_date": "October 2021",
     "duration": "35h",
-    "description": "Intelligent vacuum agent",
+    "title": "Intelligent vacuum agent",
+    "description_file": "vacuum_agent.md",
     "tags": [
       "AI",
       "UQAC",
@@ -131,7 +140,8 @@
     "start_date": "August 2021",
     "end_date": "August 2021",
     "duration": "15h",
-    "description": "Fourier transform drawing app",
+    "title": "Fourier transform drawing app",
+    "description_file": "fourier.md",
     "tags": [
       "Web",
       "JavaScript"
@@ -150,7 +160,8 @@
     "start_date": "February 2018",
     "end_date": "June 2018",
     "duration": "100h",
-    "description": "Tower defense console game",
+    "title": "Tower defense console game",
+    "description_file": "the_eternal_kingdom.md",
     "tags": [
       "Python",
       "ENIB",

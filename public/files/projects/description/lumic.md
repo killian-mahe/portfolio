@@ -1,0 +1,2 @@
+Lumic is another personal project started in July 2021, during a break in the development of Share Your Project. The aim of the project is to propose a web dashboard listing various links saved by the user. Initially planned to last 1-2 weeks, the project has finally grown and it is now possible to also create teams to create shared dashboards and manage the various associated permissions. The project is now finished and publicly available here: https://lumic.fr !
+The project was built with the Laravel and VueJS frameworks using TailwindCSS for styling.

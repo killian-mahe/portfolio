@@ -23,7 +23,7 @@
     </div>
 
     <div class="flex justify-between items-center mt-1">
-      <p class="font-sans">{{ project.description }}</p>
+      <p class="font-sans">{{ project.title }}</p>
       <div class="flex items-center font-light">
         <span v-if="project.end_date && project.start_date !== project.end_date">{{ project.start_date }} - {{ project.end_date }}</span>
         <span v-else-if="project.end_date === project.start_date">{{ project.start_date }}</span>
@@ -41,13 +41,7 @@
     </div>
 
 
-    <p class="text-sm text-justify leading-loose font-light mt-4">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc finibus risus sed metus aliquet, in auctor purus gravida.
-      Proin neque leo, aliquam et eros ac, maximus pulvinar turpis. Donec elementum metus vitae velit hendrerit gravida.
-      Quisque molestie venenatis libero, vel finibus ligula dictum vel. Etiam posuere massa posuere lectus vehicula scelerisque.
-      Maecenas sit amet libero in massa egestas commodo nec et ex. Aliquam tristique maximus justo eget elementum.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac hendrerit mi.
-      Etiam ultrices blandit tortor, at hendrerit urna posuere quis.
+    <p class="mt-4 markdown-container" v-html="projectDescription">
     </p>
 
     <Carousel class="w-3/4 max-h-[24rem] mx-auto mt-5" :images="project.images"></Carousel>
@@ -62,6 +56,7 @@
 import Carousel from "../Carousel.vue"
 import TextContainer from "../TextContainer.vue"
 import Tag from "./Tag.vue";
+import showndown from "showdown";
 
 export default {
   name: "LargeProjectCard.vue",
@@ -70,23 +65,62 @@ export default {
     Tag,
     TextContainer
   },
+  data() {
+    return {
+      projectDescription: ""
+    }
+  },
   props: {
     project: {
       type: Object,
       required: true
     }
   },
+  mounted() {
+    this.getProjectDescription()
+  },
   methods: {
     openFile(project) {
       window.open(project.links.download)
+    },
+    getProjectDescription() {
+      this.axios.get(`/files/projects/description/${this.project.description_file}`).then((response) => {
+        if (response.status === 200) {
+          const converter = new showndown.Converter();
+          this.projectDescription = converter.makeHtml(response.data);
+        } else {
+          this.projectDescription = "";
+        }
+      })
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 .project-links {
   @apply h-10 opacity-50 hover:opacity-100;
   @apply transition duration-100 ease-in-out;
 }
+
+.markdown-container {
+  @apply font-light text-sm whitespace-pre-line;
+}
+
+.markdown-container h1 {
+  @apply font-medium text-xl my-1;
+}
+
+.markdown-container h2 {
+  @apply font-medium text-lg my-1;
+}
+
+.markdown-container p strong {
+  @apply font-medium;
+}
+
+.markdown-container a {
+  @apply text-primary font-normal;
+}
+
 </style>

@@ -126,8 +126,8 @@ export default {
 }
 
 .carousel-button {
-  @apply bg-black stroke-white rounded-full p-1 h-8 w-8 opacity-50;
+  @apply bg-black stroke-white rounded-full p-1 h-8 w-8 opacity-25;
   @apply hover:opacity-75;
-  @apply transition ease-in-out duration-100;
+  @apply transition ease-in-out duration-200;
 }
 </style>

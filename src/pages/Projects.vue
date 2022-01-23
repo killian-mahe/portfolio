@@ -31,7 +31,7 @@
       <div class="grid grid-cols-1 gap-12 mx-auto">
 <!--        <ProjectCard @details="open(project)" v-for="project in selectedProjects" class="h-[400px] snap-center"-->
 <!--                     :project="project"></ProjectCard>-->
-        <LargeProjectCard v-for="project in selectedProjects" class="h-fit hidden xl:block snap-center shadow-md"
+        <LargeProjectCard v-for="project in selectedProjects" class="h-fit hidden md:block snap-center shadow-md"
                           :key="project.name"
                           :project="project"></LargeProjectCard>
       </div>

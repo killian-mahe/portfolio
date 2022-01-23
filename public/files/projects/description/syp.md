@@ -1,0 +1,7 @@
+Share your project is originally a personal project idea that came to me to meet a need for sharing and communication around projects.
+
+It is a web solution for sharing projects of all kinds, allowing members to benefit from innovative project management solutions,
+and for visitors to follow the evolution of their favourite projects.
+
+I have been working on this project since September 2019, initially on my own, Share your project was more a pretext to discover and practice new web technologies than a real project.
+In September 2020, I deleted the first version of the project to start a new one with **[Paul Walczak](https://paulwalczak.shareyourproject.fr)**, a friend. We use the frameworks Laravel and VueJS to build this app. We are proud to carry this project, and we hope to take it as far as possible ! Currently, the project is still in development, we are working on it, but you can follow our work on Github and visit our website : [SYP](https://app.shareyourproject.fr).

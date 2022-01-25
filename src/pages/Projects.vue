@@ -28,12 +28,8 @@
     <div></div>
 
     <div class="lg:col-span-4">
-      <div class="grid grid-cols-1 gap-12 mx-auto">
-<!--        <ProjectCard @details="open(project)" v-for="project in selectedProjects" class="h-[400px] snap-center"-->
-<!--                     :project="project"></ProjectCard>-->
-        <LargeProjectCard v-for="project in selectedProjects" class="h-fit hidden md:block snap-center shadow-md"
-                          :key="project.name"
-                          :project="project"></LargeProjectCard>
+      <div class="grid grid-cols-3 gap-12 mx-auto">
+        <ProjectCard :project="project" v-for="project in selectedProjects" :key="project.name"/>
       </div>
     </div>
 
@@ -43,7 +39,6 @@
 
 <script>
 import Title from '../components/Projects/Title.vue'
-import LargeProjectCard from "../components/Projects/LargeProjectCard.vue";
 import ProjectCard from "../components/Projects/ProjectCard.vue";
 import Tag from '../components/Projects/Tag.vue';
 import Modal from '../components/Modal.vue';
@@ -56,7 +51,6 @@ export default {
     Tag,
     Title,
     ProjectCard,
-    LargeProjectCard,
     Modal,
     Carousel
   },

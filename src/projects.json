@@ -2,6 +2,7 @@
   {
     "name": "Share Your Project",
     "images": [
+      "/img/projects/syp.png",
       "/img/projects/syp/welcome.png",
       "/img/projects/syp/login.png",
       "/img/projects/syp/welcome_2.png"
@@ -50,7 +51,7 @@
   {
     "name": "AI procedural generation review",
     "images": [
-      "/img/projects/paper.png"
+      "/img/projects/review/front_page.png"
     ],
     "start_date": "December 2021",
     "end_date": "December 2021",
@@ -72,7 +73,12 @@
   {
     "name": "Sudoku Reader",
     "images": [
-      "/img/projects/sudoku.png"
+      "/img/projects/sudoku/default.png",
+      "/img/projects/sudoku/result.png",
+      "/img/projects/sudoku/solved.png",
+      "/img/projects/sudoku/dilatation.png",
+      "/img/projects/sudoku/dataset_exemple.png",
+      "/img/projects/sudoku/grid.png"
     ],
     "start_date": "November 2021",
     "end_date": "December 2021",
@@ -93,7 +99,8 @@
   {
     "name": "Colors clustering",
     "images": [
-      "/img/projects/clustering.svg"
+      "/img/projects/clustering/settings.png",
+      "/img/projects/clustering/result.png"
     ],
     "start_date": "October 2021",
     "end_date": "October 2021",
@@ -114,7 +121,7 @@
   {
     "name": "Vacuum agent",
     "images": [
-      "/img/projects/vacuum.png"
+      "/img/projects/vacuum/default.png"
     ],
     "start_date": "October 2021",
     "end_date": "October 2021",
@@ -135,7 +142,7 @@
   {
     "name": "Fourier Drafter",
     "images": [
-      "/img/projects/drawing.png"
+      "/img/projects/drawing/default.png"
     ],
     "start_date": "August 2021",
     "end_date": "August 2021",

@@ -1,0 +1,3 @@
+This project is a simple project to practice my first skills in data mining and artificial intelligence. The goal of this small application is simply to create colour clusters from an imported image using either supervised learning (K-Means algorithm) or unsupervised learning (DB Scan algorithm).
+
+The project was short but complex enough to challenge me with the speed of execution and the complexity of the algorithms.

@@ -1,26 +1,14 @@
 <template>
-<div class="relative">
-
-  <div class="absolute -top-2 -left-2 w-full h-full border-[3px] border-black-blue bg-white flex flex-col items-center justify-between p-5">
-
-    <h2 class="text-primary text-center font-mono text-3xl font-bold">{{ project.name }}</h2>
-
-    <img :src="project.images[0]"
-         class="h-auto min-w-1/2 max-h-24"
-         alt="project_picture"/>
-
-    <p class="text-center font-sans font-light">{{ project.description }}</p>
-
-    <div class="flex justify-between w-2/3">
-      <Tag v-for="tag in project.tags" :outline="true">{{ tag }}</Tag>
+  <div class="relative group w-full h-fit cursor-pointer">
+    <div class="relative overflow-hidden border-[3px] border-black-blue transition-all duration-300 ease-in-out group-hover:-translate-x-2 group-hover:-translate-y-2">
+      <div class="absolute flex justify-center items-center w-full h-full translate-y-full group-hover:translate-y-0 transition-all duration-300 ease-in-out z-30">
+        <slot></slot>
+      </div>
+      <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 z-20"></div>
+      <img class="object-cover group-hover:blur group-hover:scale-110 delay-75 transition-all duration-300 ease-in-out z-10" :src="project.images[0]" alt="project_image"/>
     </div>
-
-    <Button class="w-3/4 mt-2" @click="$emit('details')">See more</Button>
-
+    <div class="absolute -z-10 inset-0 border-[3px] border-primary"></div>
   </div>
-
-  <div class="w-full h-full border-[3px] border-primary"></div>
-</div>
 </template>
 
 <script>

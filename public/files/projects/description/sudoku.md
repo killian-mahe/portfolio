@@ -1,0 +1,4 @@
+As part of a Machine Learning and Artificial Intelligence course project, I built an application that can detect a Sudoku grid from an imported image or from the smartphone camera. The application uses filters to prepare the image and then tries to extract the grid and the filled numbers. Then, using different AI algorithms, the grid is solved in a very short time.
+
+We used _Sauvola threshold_, _perspective transformation_, _binary dilation_ and _connexe components_ to extract the grid. The grid is solved using _AC3_ algorithm and a _backtracking search_. During the development on the app, we had a few issues with the digits' recognition, and we had to create our own dataset of typeface digits.
+We built a PC app and an Android app too. It was really pleasant to work on this project as we worked on pictures, then it's easier to visualize what we've done !

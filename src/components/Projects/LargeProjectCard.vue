@@ -1,9 +1,9 @@
 <template>
 
-<div class="border-[3px] border-black-blue bg-white p-6">
+<div class="border-[3px] border-black-blue bg-white">
 
+  <div class="p-6">
 
-  <div>
     <div class="flex justify-between items-center">
       <h2 class="text-primary font-mono text-3xl font-bold">
         {{ project.name }}
@@ -44,7 +44,7 @@
     <p class="mt-4 markdown-container" v-html="projectDescription">
     </p>
 
-    <Carousel class="w-3/4 max-h-[24rem] mx-auto mt-5" :images="project.images"></Carousel>
+    <Carousel class="w-3/4 h-fit mx-auto mt-5 border-black-blue border-[3px]" :images="project.images"></Carousel>
 
   </div>
 

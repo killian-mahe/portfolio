@@ -74,6 +74,7 @@
   {
     "name": "Sudoku Reader",
     "images": [
+      "/img/projects/sudoku.png",
       "/img/projects/sudoku/default.png",
       "/img/projects/sudoku/result.png",
       "/img/projects/sudoku/solved.png",
@@ -100,6 +101,7 @@
   {
     "name": "Colors clustering",
     "images": [
+      "/img/projects/clustering.png",
       "/img/projects/clustering/settings.png",
       "/img/projects/clustering/result.png"
     ],
@@ -122,7 +124,7 @@
   {
     "name": "Vacuum agent",
     "images": [
-      "/img/projects/vacuum/default.png"
+      "/img/projects/vacuum.png"
     ],
     "start_date": "October 2021",
     "end_date": "October 2021",

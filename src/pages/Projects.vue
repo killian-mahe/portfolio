@@ -3,7 +3,7 @@
   <Title class="my-12"></Title>
 
   <!-- Background line -->
-  <div class="absolute top-0 w-screen left-1/4 -z-10 max-h-screen">
+  <div class="absolute hidden lg:block top-0 w-screen left-1/4 -z-10 max-h-screen">
     <svg width="901" height="1171" viewBox="0 0 901 1171" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
           d="M60.6702 2C35.0674 9.08209 -11.738 40.3978 5.86228 109.004C27.8627 194.762 167.198 263.909 242.849 252.32C318.499 240.731 542.748 195.921 500.678 389.841C458.607 583.762 340.885 625.482 264.849 629.345C188.813 633.208 44.4594 678.79 27.0907 830.605C9.722 982.419 171.058 1116.46 507.625 966.195C776.879 845.979 880.731 1051.31 899 1169"
@@ -28,7 +28,7 @@
     <div></div>
 
     <div class="lg:col-span-4">
-      <div class="grid grid-cols-3 gap-12 mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mx-auto">
         <ProjectCard :project="project" v-for="project in selectedProjects" :key="project.name"/>
       </div>
     </div>

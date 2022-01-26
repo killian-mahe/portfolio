@@ -27,6 +27,7 @@
   {
     "name": "Lumic",
     "images": [
+      "/img/projects/lumic.png",
       "/img/projects/lumic/dashboard.png",
       "/img/projects/lumic/edit.png",
       "/img/projects/lumic/team_settings.png",
@@ -49,9 +50,9 @@
     }
   },
   {
-    "name": "AI procedural generation review",
+    "name": "AI review",
     "images": [
-      "/img/projects/review/front_page.png"
+      "/img/projects/paper.png"
     ],
     "start_date": "December 2021",
     "end_date": "December 2021",

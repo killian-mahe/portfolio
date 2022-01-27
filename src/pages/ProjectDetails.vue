@@ -15,9 +15,15 @@
       <div :style="headerStyle" class="w-1/2 mt-[30rem] mx-auto flex">
         <div class="w-1/4">
           <h2 class="text-3xl mb-2">Tags</h2>
-          <div class="font-medium text-gray-400 font-light font-mono" v-for="tag in project.tags">{{ tag }}</div>
+          <div class="font-medium text-gray-400 font-mono" v-for="tag in project.tags">{{ tag }}</div>
           <h2 class="text-3xl mt-8 mb-2">Date</h2>
-          <div class="font-medium text-gray-400 font-light font-mono">{{ project.start_date }}</div>
+          <div class="font-medium text-gray-400 font-mono">
+            <span>{{ project.start_date }}</span>
+            <span v-if="project.end_date" class="mx-1">-</span>
+            <span v-if="project.end_date">{{ project.end_date }}</span>
+            <div class="font-bold text-gray-500" v-if="!project.end_date">In progress</div>
+          </div>
+          <div class="font-medium text-gray-400 font-mono text-lg mt-8">{{ project.duration }}</div>
           <div class="mt-8 w-48 h-[1px] border-gray-300 border-b-[1px]"></div>
         </div>
         <div class="w-3/4 markdown-container px-10" v-html="projectDescription">

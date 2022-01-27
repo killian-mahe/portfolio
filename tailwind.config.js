@@ -6,7 +6,7 @@ module.exports = {
       theme: {
 
           fontFamily: {
-              serif: ['Trirong', 'serif'],
+              serif: ['Noto Serif', 'Trirong', 'serif'],
               mono: ['Overpass Mono', 'monospace'],
               sans: ['Mitr', 'sans-serif']
           },

@@ -8,12 +8,14 @@
 
         <div class="text-sm font-light mt-6">
           <span>{{ project.start_date }}</span>
-          <span v-if="project.end_date"> - {{ project.end_date}}</span>
+          <span v-if="project.end_date && project.start_date !== project.end_date"> - {{ project.end_date}}</span>
         </div>
 
         <div class="absolute bottom-6 space-x-4">
           <span v-for="tag in project.tags" :key="tag">{{ tag }}</span>
         </div>
+
+        <span v-if="!project.end_date">In progress</span>
       </div>
       <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 z-20"></div>
       <img class="object-cover object-center group-hover:blur group-hover:scale-110 transition-all duration-300 ease-in-out z-10" :src="project.images[0]" alt="project_image"/>

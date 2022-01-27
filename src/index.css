@@ -80,3 +80,15 @@ body {
 .text-important-light:hover::after {
     @apply opacity-50;
 }
+
+::-moz-selection { /* Code for Firefox */
+    @apply text-white bg-primary;
+}
+
+::selection {
+    @apply text-white bg-primary;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -29,7 +29,11 @@
 
     <div class="lg:col-span-4">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mx-auto">
-        <ProjectCard :project="project" v-for="project in selectedProjects" :key="project.name"/>
+        <router-link :to="{ name: 'project', params: { project: project.id}}"
+                     v-for="project in selectedProjects"
+                     :key="project.name">
+          <ProjectCard class="drop-shadow-lg" :project="project"/>
+        </router-link>
       </div>
     </div>
 

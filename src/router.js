@@ -5,6 +5,7 @@ import Career from './pages/Career.vue'
 import Projects from './pages/Projects.vue'
 import Skills from './pages/Skills.vue'
 import Contact from './pages/Contact.vue'
+import ProjectDetails from './pages/ProjectDetails.vue'
 
 const routes = [
     { path: '/', redirect: '/home' },
@@ -14,6 +15,7 @@ const routes = [
     { path: '/projects', component: Projects, name: 'projects' },
     { path: '/skills', component: Skills, name: 'skills' },
     { path: '/contact', component: Contact, name: 'contact' },
+    { path: '/project/:project', component: ProjectDetails, name: 'project' }
 ]
 
 export const router = createRouter({

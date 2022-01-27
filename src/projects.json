@@ -1,6 +1,7 @@
 [
   {
     "name": "Share Your Project",
+    "id": "syp",
     "images": [
       "/img/projects/syp.png",
       "/img/projects/syp/welcome.png",
@@ -26,6 +27,7 @@
   },
   {
     "name": "Lumic",
+    "id": "lumic",
     "images": [
       "/img/projects/lumic.png",
       "/img/projects/lumic/dashboard.png",
@@ -51,6 +53,7 @@
   },
   {
     "name": "AI review",
+    "id": "ai-review",
     "images": [
       "/img/projects/paper.png"
     ],
@@ -73,6 +76,7 @@
   },
   {
     "name": "Sudoku Reader",
+    "id": "sudoku-reader",
     "images": [
       "/img/projects/sudoku.png",
       "/img/projects/sudoku/default.png",
@@ -100,6 +104,7 @@
   },
   {
     "name": "Colors clustering",
+    "id": "colors-clustering",
     "images": [
       "/img/projects/clustering.png",
       "/img/projects/clustering/settings.png",
@@ -123,6 +128,7 @@
   },
   {
     "name": "Vacuum agent",
+    "id": "vacuum-agent",
     "images": [
       "/img/projects/vacuum.png"
     ],
@@ -139,47 +145,6 @@
     "links": {
       "demo": null,
       "github": "https://github.com/killian-mahe/agent-aspirateur",
-      "download": null
-    }
-  },
-  {
-    "name": "Fourier Drafter",
-    "images": [
-      "/img/projects/drawing/default.png"
-    ],
-    "start_date": "August 2021",
-    "end_date": "August 2021",
-    "duration": "15h",
-    "title": "Fourier transform drawing app",
-    "description_file": "fourier.md",
-    "tags": [
-      "Web",
-      "JavaScript"
-    ],
-    "links": {
-      "demo": "https://fourier.killianmahe.shareyourproject.fr/",
-      "github": "https://github.com/killian-mahe/Fourier-Drafter",
-      "download": null
-    }
-  },
-  {
-    "name": "The Eternal Kingdom",
-    "images": [
-      "/img/projects/game.png"
-    ],
-    "start_date": "February 2018",
-    "end_date": "June 2018",
-    "duration": "100h",
-    "title": "Tower defense console game",
-    "description_file": "the_eternal_kingdom.md",
-    "tags": [
-      "Python",
-      "ENIB",
-      "Game"
-    ],
-    "links": {
-      "demo": null,
-      "github": "https://github.com/killian-mahe/the_eternal_kingdom",
       "download": null
     }
   }

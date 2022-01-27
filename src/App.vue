@@ -13,24 +13,6 @@ import NavBar from './components/NavBar.vue'
     <div></div>
   </div>
 
-  <router-view>
-  </router-view>
+  <router-view/>
 
 </template>
-
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.2s ease-out;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter-to,
-.fade-leave-from {
-  opacity: 1;
-}
-</style>

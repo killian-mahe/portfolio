@@ -89,6 +89,25 @@ body {
     @apply text-white bg-primary;
 }
 
-html {
+* {
     scroll-behavior: smooth;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4b5563 #e5e7eb;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    @apply bg-gray-200;
+}
+
+*::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-lg border-[1px];
 }

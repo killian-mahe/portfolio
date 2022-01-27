@@ -24,7 +24,7 @@
   </div>
 
 
-  <div class="lg:grid lg:grid-cols-6">
+  <div class="lg:grid lg:grid-cols-6 mb-10">
     <div></div>
 
     <div class="lg:col-span-4">

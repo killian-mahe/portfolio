@@ -14,8 +14,8 @@
       <div class="w-full flex">
         <Profile class="-top-20"></Profile>
         <div class="grow flex justify-center space-x-24 items-center">
-          <router-link :to="{name: 'contact'}"><Button>Contact me</Button></router-link>
-          <router-link :to="{name: 'projects'}"><ButtonSecondary>My projects</ButtonSecondary></router-link>
+          <router-link :to="{name: 'contact'}"><Button class="w-48 h-12">Contact me</Button></router-link>
+          <router-link :to="{name: 'projects'}"><ButtonSecondary class="w-48 h-12">My projects</ButtonSecondary></router-link>
         </div>
       </div>
       <div class="grid grid-cols-6">

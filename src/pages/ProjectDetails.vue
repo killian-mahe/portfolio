@@ -1,6 +1,6 @@
 <template>
 
-  <div class="flex flex-col items-center mt-96" v-if="project">
+  <div class="flex flex-col items-center mt-96 mb-10" v-if="project">
 
       <!--   Header   -->
       <div class="w-full absolute top-0 inset-x-0">
@@ -24,8 +24,8 @@
         </div>
       </div>
 
-      <div class="h-screen">
-
+      <div class="columns-2 w-3/4 gap-8 space-y-8 mx-auto">
+        <img class="w-full shadow-lg" :src="image" v-for="image in project.images.slice(1)" alt="project_image" :key="image"/>
       </div>
 
   </div>

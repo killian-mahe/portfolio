@@ -22,8 +22,13 @@
             <span v-if="project.end_date" class="mx-1">-</span>
             <span v-if="project.end_date">{{ project.end_date }}</span>
             <div class="font-bold text-gray-500" v-if="!project.end_date">In progress</div>
+            <div class="font-medium text-gray-400 font-mono text-lg">{{ project.duration }}</div>
           </div>
-          <div class="font-medium text-gray-400 font-mono text-lg mt-8">{{ project.duration }}</div>
+          <div class="flex flex-col mt-8 mb-2">
+            <span v-if="project.links.github">See on <a :href="project.links.github" target="_blank" class="text-primary">Github</a></span>
+            <span v-if="project.links.demo">Available at <a :href="project.links.demo" target="_blank" class="text-primary">{{ projectLink }}</a></span>
+            <span v-if="project.links.download" class="text-primary cursor-pointer" @click="openFile(project)">Download</span>
+          </div>
           <div class="mt-8 w-48 h-[1px] border-gray-300 border-b-[1px]"></div>
         </div>
         <div class="w-3/4 markdown-container px-10" v-html="projectDescription">
@@ -65,6 +70,11 @@ export default {
       this.headerStyle.transform = `translateY(-${window.scrollY/3}px)`
     };
   },
+  computed: {
+    projectLink() {
+      return this.project.links.demo.replace("https://","")
+    }
+  },
   methods: {
     getProjectDescription() {
       this.axios.get(`/files/projects/description/${this.project.description_file}`).then((response) => {
@@ -75,7 +85,10 @@ export default {
           this.projectDescription = "";
         }
       })
-    }
+    },
+    openFile(project) {
+      window.open(project.links.download)
+    },
   }
 }
 </script>

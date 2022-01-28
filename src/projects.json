@@ -20,8 +20,8 @@
       "ENIB"
     ],
     "links": {
-      "demo": "https://app.shareyourproject.fr/",
-      "github": "https://github.com/shareYourProject/",
+      "demo": "https://app.shareyourproject.fr",
+      "github": "https://github.com/shareYourProject",
       "download": null
     }
   },
@@ -46,7 +46,7 @@
       "JavaScript"
     ],
     "links": {
-      "demo": "https://lumic.fr/",
+      "demo": "https://lumic.fr",
       "github": "https://github.com/killian-mahe/lumic",
       "download": null
     }

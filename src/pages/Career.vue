@@ -16,6 +16,18 @@
     <div class="space-y-8 flex flex-col items-stretch lg:col-span-4">
 
       <!-- Arkéa -->
+      <Experience class="w-1/3 self-end">
+        <template v-slot:name>Data scientist</template>
+        <template v-slot:title>Internship</template>
+        <template v-slot:company>Crédit Mutuel Arkéa</template>
+        <template v-slot:country>FR</template>
+        <template v-slot:dates>August 2022 - February 2023</template>
+        <template v-slot:description>
+          Analysis and prediction of mainframe R4H peaks based on machine learning and deep learning models.
+        </template>
+      </Experience>
+
+      <!-- Arkéa -->
       <Experience class="w-1/3">
         <template v-slot:name>Data engineer</template>
         <template v-slot:title>Internship</template>

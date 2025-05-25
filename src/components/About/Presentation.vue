@@ -7,8 +7,7 @@
       </div>
       <div class="w-full bg-black-blue">
         <TextContainer theme="dark" class="text-white tracking-wide font-sans font-light text-justify m-4">
-          I’m a <span class="text-important-dark">engineer student</span> in <span class="text-important-dark">artificial intelligence</span> and data science.
-          But I'm also a <span class="text-important-dark">web enthusiast</span> and I love to get lost in more and more ambitious projects in my spare time.
+          Passionate about <span class="text-important-dark">AI</span> and <span class="text-important-dark">data science</span>, I'm also a web enthusiast and I love to get lost in more and more ambitious projects in my spare time.
         </TextContainer>
       </div>
     </div>
@@ -23,8 +22,7 @@
       <div class="bottom-box flex flex-col">
         <div class="main-box"></div>
         <TextContainer theme="dark" class="text-white tracking-wide font-sans font-light text-justify m-4">
-          I’m a <span class="text-important-dark">engineer student</span> in <span class="text-important-dark">artificial intelligence</span> and data science.
-          But I'm also a <span class="text-important-dark">web enthusiast</span> and I love to get lost in more and more ambitious projects in my spare time.
+          Passionate about <span class="text-important-dark">AI</span> and <span class="text-important-dark">data science</span>, I'm also a web enthusiast and I love to get lost in more and more ambitious projects in my spare time.
         </TextContainer>
         </div>
     </div>
@@ -46,7 +44,7 @@ export default {
 .container {
   @apply relative;
   width: 1000px;
-  height: 275px;
+  height: 270px;
 }
 
 .bordered-box {
@@ -62,7 +60,7 @@ export default {
 .main-box {
   @apply border-b-4 border-r-4 border-b-white border-r-white;
   width: 250px;
-  height: 40px;
+  height: 30px;
 }
 
 .bottom-box {
@@ -70,6 +68,6 @@ export default {
   bottom: 0;
   right: 0;
   width: 650px;
-  height: 190px;
+  height: 175px;
 }
 </style>

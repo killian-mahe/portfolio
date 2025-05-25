@@ -3,7 +3,7 @@
   <!-- Mobile -->
     <div class="lg:hidden w-full flex flex-col items-center space-y-10">
       <div class="border-4 border-primary-dark p-5 w-fit flex justify-center items-center font-mono text-4xl font-medium tracking-wider">
-        AI Engineer Student
+        Lead Machine Learning Engineer
       </div>
       <div class="w-full bg-black-blue">
         <TextContainer theme="dark" class="text-white tracking-wide font-sans font-light text-justify m-4">
@@ -17,8 +17,8 @@
   <!-- Desktop -->
     <div class="hidden lg:block container">
       <div class="bordered-box">
-        AI Engineer <br/>
-        Student
+        Lead Machine Learning <br />
+        Engineer
       </div>
       <div class="bottom-box flex flex-col">
         <div class="main-box"></div>
@@ -45,7 +45,7 @@ export default {
 <style type="text/css" scoped>
 .container {
   @apply relative;
-  width: 900px;
+  width: 1000px;
   height: 275px;
 }
 
@@ -55,13 +55,13 @@ export default {
   @apply font-mono text-4xl font-medium tracking-wider;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 600px;
   height: 125px;
 }
 
 .main-box {
   @apply border-b-4 border-r-4 border-b-white border-r-white;
-  width: 100px;
+  width: 250px;
   height: 40px;
 }
 

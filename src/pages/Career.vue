@@ -23,10 +23,10 @@
         <template v-slot:country>FR</template>
         <template v-slot:dates>February 2023 - now</template>
         <template v-slot:shortDescription>
-          Leading a team of machine learning engineers and Python developers, I design, industrialize, and deploy APIs, tools, and AI models in production environments.
+          Leading a team of <b>machine learning engineers</b> and <b>Python developers</b>, I design, industrialize, and deploy <b>APIs</b>, <b>tools</b>, and <b>AI models</b> in production environments.
         </template>
         <template v-slot:longDescription>
-          Leading a team of machine learning engineers and Python developers, I am responsible for designing, industrializing, and deploying APIs, tools, and AI models (including generative AI) in production environments. My daily work involves extensive use of Python and deploying solutions on Kubernetes (GKE). I ensure the industrialization of projects and processes, and I am Google Cloud Platform certified. I also contribute to business development activities typical of a consulting company, and I am the GenAI lead for the Capgemini Brest office.
+          Leading a team of <b>machine learning engineers</b> and <b>Python developers</b>, I am responsible for <b>designing</b>, <b>industrializing</b>, and <b>deploying APIs, tools, and AI models</b> (including <b>generative AI</b>) in production environments. My daily work involves extensive use of <b>Python</b> and deploying solutions on <b>Kubernetes (GKE)</b>. I ensure the <b>industrialization</b> of projects and processes, and I am <b>Google Cloud Platform certified</b>. I also contribute to <b>business development</b> activities typical of a consulting company, and I am the <b>GenAI lead</b> for the Capgemini Brest office.
         </template>
       </Experience>
 
@@ -38,7 +38,7 @@
         <template v-slot:country>FR</template>
         <template v-slot:dates>August 2022 - February 2023</template>
         <template v-slot:description>
-          Analysis and prediction of mainframe R4H peaks based on machine learning and deep learning models.
+          <b>Analysis</b> and <b>prediction</b> of mainframe <b>R4H peaks</b> based on <b>machine learning</b> and <b>deep learning models</b>.
         </template>
       </Experience>
 
@@ -50,7 +50,7 @@
         <template v-slot:country>FR</template>
         <template v-slot:dates>February - July 2021</template>
         <template v-slot:description>
-          Launch of a project to detect anomalies in the time series of the various sensors of Arkéa's IT system.
+          Launch of a project to <b>detect anomalies</b> in the <b>time series</b> of the various <b>sensors</b> of Arkéa's IT system.
         </template>
       </Experience>
 
@@ -62,8 +62,8 @@
         <template v-slot:country>FR</template>
         <template v-slot:dates>June - August 2020</template>
         <template v-slot:description>
-          Development of mobile applications based on Xamarin (.NET) for printing
-          and editing labels for the food industry.
+          <b>Development</b> of <b>mobile applications</b> based on <b>Xamarin (.NET)</b> for <b>printing</b>
+          and <b>editing labels</b> for the <b>food industry</b>.
         </template>
       </Experience>
 
@@ -75,7 +75,7 @@
         <template v-slot:country>UK</template>
         <template v-slot:dates>July - August 2019</template>
         <template v-slot:description>
-          Creating prediction and financial analysis scripts. Use of predictive predictive models and machine learning (Python)
+          Creating <b>prediction</b> and <b>financial analysis scripts</b>. Use of <b>predictive models</b> and <b>machine learning</b> (<b>Python</b>)
         </template>
       </Experience>
 
@@ -87,7 +87,7 @@
         <template v-slot:country>FR</template>
         <template v-slot:dates>Januray 2019</template>
         <template v-slot:description>
-          Integration of Apizee conferencing features into community tools (Slack, Google Calendar)
+          <b>Integration</b> of Apizee <b>conferencing features</b> into <b>community tools</b> (<b>Slack</b>, <b>Google Calendar</b>)
         </template>
       </Experience>
 
@@ -99,7 +99,7 @@
         <template v-slot:country>FR</template>
         <template v-slot:dates>July - August 2018</template>
         <template v-slot:description>
-          Summer assistant in telephone reception with the main tasks of management of current requests and orientation of customers as well as some commercial activities.
+          Summer assistant in <b>telephone reception</b> with the main tasks of <b>management of current requests</b> and <b>orientation of customers</b> as well as some <b>commercial activities</b>.
         </template>
       </Experience>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="/img/profile_picture.png" class="bordered-box grayscale" alt="profile-picture"/>
+    <img src="/img/profile_picture.jpg" class="bordered-box" alt="profile-picture"/>
     <div class="bottom-box flex flex-col">
       <div class="main-box"></div>
     </div>

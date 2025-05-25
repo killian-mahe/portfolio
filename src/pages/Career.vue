@@ -15,6 +15,21 @@
 
     <div class="space-y-8 flex flex-col items-stretch lg:col-span-4">
 
+      <!-- Capgemini -->
+      <Experience class="w-1/3">
+        <template v-slot:name>Lead Machine Learning Engineer</template>
+        <template v-slot:title>Permanent contract</template>
+        <template v-slot:company>Capgemini</template>
+        <template v-slot:country>FR</template>
+        <template v-slot:dates>February 2023 - now</template>
+        <template v-slot:shortDescription>
+          Leading a team of machine learning engineers and Python developers, I design, industrialize, and deploy APIs, tools, and AI models in production environments.
+        </template>
+        <template v-slot:longDescription>
+          Leading a team of machine learning engineers and Python developers, I am responsible for designing, industrializing, and deploying APIs, tools, and AI models (including generative AI) in production environments. My daily work involves extensive use of Python and deploying solutions on Kubernetes (GKE). I ensure the industrialization of projects and processes, and I am Google Cloud Platform certified. I also contribute to business development activities typical of a consulting company, and I am the GenAI lead for the Capgemini Brest office.
+        </template>
+      </Experience>
+
       <!-- Arkéa -->
       <Experience class="w-1/3 self-end">
         <template v-slot:name>Data scientist</template>

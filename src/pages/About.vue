@@ -24,7 +24,7 @@
           I started learning <span class="text-important-light">web development skills</span> early, when I was in high school.
           I spend a lot of time on web projects, mostly personal.
           When I entered engineering school, I started to get interested in <span class="text-important-light">AI technologies</span> and the world of Big Data.
-          I am currently completing my 5 year <span class="text-important-light">engineering degree</span> with a <span class="text-important-lighty">master's degree in computer science</span> in Canada.
+          Since three years, I have been working on data science and machine learning projects, from experiments to <span class="text-important-light">industrialisation</span>, and I have been able to apply my skills in various fields such as <span class="text-important-light">computer vision</span>, frauds detection or natural language processing (and <span class="text-important-light">Generative AI</span>).
         </TextContainer>
         <div></div>
       </div>

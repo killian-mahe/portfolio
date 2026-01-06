@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col items-center">
-    <span class="text-primary-dark font-medium text-3xl font-serif">
+    <span class="text-primary-dark font-medium text-3xl text-center font-serif">
       <slot name="name" />
     </span>
-    <span class="font-serif font-medium">
-      <slot name="title" /> at <span class="text-important-light">
+    <span class="font-serif text-center font-medium">
+      <slot name="title" /> at <br> <span class="text-important-light">
         <slot name="company" />
       </span>,
       <slot name="country" />

@@ -15,13 +15,28 @@
 
     <div class="space-y-8 flex flex-col items-stretch lg:col-span-4">
 
+      <!-- Arkéa -->
+      <Experience class="w-1/3 self-end">
+        <template v-slot:name>Lead ML Engineer & Project coordinator</template>
+        <template v-slot:title>Permanent contract</template>
+        <template v-slot:company>Crédit Mutuel Arkéa</template>
+        <template v-slot:country>FR</template>
+        <template v-slot:dates>Septembre 2025 - now</template>
+        <template v-slot:shortDescription>
+          Leading a team of <b>machine learning engineers</b>, to design, industrialize, and deploy <b>APIs</b>, and <b>AI models</b> in production environments.
+        </template>
+        <template v-slot:longDescription>
+          Leading a team of <b>machine learning engineers</b> and <b>Python developers</b>, I am responsible for <b>designing</b>, <b>industrializing</b>, and <b>deploying APIs, tools, and AI models</b> (including <b>generative AI</b>) in production environments. My daily work involves extensive use of <b>Python</b> and deploying solutions on <b>Kubernetes (GKE)</b>. I ensure the <b>industrialization</b> of projects and processes, and I am <b>Google Cloud Platform certified</b>. I also contribute to <b>business development</b> activities typical of a consulting company, and I am the <b>GenAI lead</b> for the Capgemini Brest office.
+        </template>
+      </Experience>
+
       <!-- Capgemini -->
       <Experience class="w-1/3">
-        <template v-slot:name>Lead Machine Learning Engineer</template>
+        <template v-slot:name>Lead ML Engineer</template>
         <template v-slot:title>Permanent contract</template>
         <template v-slot:company>Capgemini</template>
         <template v-slot:country>FR</template>
-        <template v-slot:dates>February 2023 - now</template>
+        <template v-slot:dates>February 2023 - August 2025</template>
         <template v-slot:shortDescription>
           Leading a team of <b>machine learning engineers</b> and <b>Python developers</b>, I design, industrialize, and deploy <b>APIs</b>, <b>tools</b>, and <b>AI models</b> in production environments.
         </template>
